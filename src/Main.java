@@ -1,16 +1,15 @@
 public class Main {
     public static void main(String[] args) {
         int startingScore = 100;
-        int payScore1 = 1300;
-        int payScore2 = 150;
+        int pay = 1200;
         int bonus = 0;
         int result;
 
-        if (payScore1 > 1000) {
-            bonus = payScore1 / 100;
-            result = bonus + startingScore + payScore1;
+        if (pay > 1000) {
+            bonus = pay / 100;
+            result = bonus + startingScore + pay;
         } else {
-            result = startingScore + payScore2;
+            result = startingScore + pay;
         }
 
         System.out.println("Finish score: " + result);
